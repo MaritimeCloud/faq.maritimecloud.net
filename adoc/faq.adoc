@@ -1,13 +1,13 @@
 
 = Maritime Cloud FAQ
-:doctype: book
+:doctype: article
 :compat-mode:
 :page-layout!:
 :toc: right
-:toclevels: 2
+:toclevels: 1
 :sectanchors:
 :sectlinks:
-:sectnums:
+:sectnums!:
 :linkattrs:
 :icons: font
 :source-highlighter: coderay
@@ -33,10 +33,3 @@
 
 include::MSDL.adoc[]
 
-<<<
-
-include::MSDL.adoc[]
-
-<<<
-
-include::MSDL.adoc[]

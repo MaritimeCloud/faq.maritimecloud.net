@@ -1,7 +1,53 @@
-== MSDL
+If you have questions that are not answered in this FAQ. You can try our Newcomers Q/A Forum available here: https://groups.google.com/a/maritimecloud.net/forum/#!forum/newcomers
 
+Readers may send feedback about errors, omissions, and ambiguities in this guide to kasperni@maritimecloud.net
+
+== Various Questions
+
+=== Who is behind the Maritime Cloud
+The Maritime Cloud started as an internal project at the Danish Maritime Authorities in 2013.
+Now more than 30 national and international partners have joined the effort. Ranging from large intergovernmental organizations to small private companies.
+
+=== Where can I download the Maritime Cloud
+The Maritime Cloud is not a concrete product you can download. Just like you cannot download the Internet. Instead it is a platform that organizations and private companies can use to build various kind of maritime services. Just like developers can build apps for the iPhone or Android ecosystem.
+
+=== Can everyone join and participate in the development of the Maritime Cloud
+Yes, the Maritime Cloud community is open for everyone with an interest in maritime technology. Keep in mind that contributing code is not the only way to get involved. You can provide feedback on documentation and tutorials, test the releases, share your visions or just participate in the various forum discussions. 
+
+=== When do you expect the Maritime Cloud to be done
+We do not expect the Maritime Cloud to ever be finished. Instead it is a 
+product that gradually will improve over time with more and more features.
+Just like smartphones such as iPhone and Android gets frequent updates with more and more features. Currently we release new features roughly every 3-4 months. But in the future we hope to have a new release every year.
+
+=== Is the Maritime Cloud secure
+In the long term the Maritime Cloud will use many of the same security technologies as banks, e-commerce sites and governments uses. Messages sent from ships will be digitally signed. Communication channels will be encrypted. You will be able to use biometric authentications methods such as fingerprints to sign documents. And many other state of the art technologies. However, the current prototype does not support all these security features yet. But they will be gradually added over the coming releases.
+
+=== Is the Maritime Cloud Open Source
+Yes! Everything that is developed within the Maritime Cloud is open sourced under the business friendly Apache 2.0 License. There are no requirements for private companies that uses the Maritime Cloud to open source their services and applications in any way.
+
+
+== Technical Questions
+
+=== How do I get started with developing on the Maritime Cloud
+The easiest way is to read out development guide available at http://dev.maritimecloud.net/
+Why did you choose to develop the Maritime Cloud in Java
+The short answer is because it was the prefered language of the developers that made the initial prototypes. However, we still believe that Java is the right choice for a big distributed systems such as the Maritime Cloud. Both because of the vast amount of libraries to build on top of but also because of the popularity of the language.
+
+=== Do I have to use Java to develop on the Maritime Cloud.
+First, there are no Maritime Cloud specifications that will ever require a particular programming language or a particular operation system. Everything is specified in bits and bytes. And anyone can take these specifications and implement them in whatever language they want to.
+
+However, we have implemented the first client prototype in Java… EXPAND
+
+=== What is the Identity Registry
+The identity registry is 
 === What is MSDL
-Test it
+MSDL is a standardized way of describing the services that can be used on the Maritime Cloud.
+For example, instead of every company developing their own parser for an AIS message. 
+The Maritime Cloud client can take a MSDL file and automatically generate the parser for you.
+Avoiding the risk of developer mistakes and lowering the need for interoperability testing.
 
-=== Why not XML 
-Yeah why not
+Long term, you will also be take to, for example, take a MSDL and generate the output you need in a S-100 specification.
+
+=== Why didn't you just use XML and SOAP instead of MSDL and MMS
+The short answer is bandwidth issues. Even compressed (zipped) XML still uses 3-4 times more bandwidth than an efficient binary encoding such as the one that we use. With Internet satellite prices of up to $30/MB and cost being a major barrier towards adoption. We believe a technology such as MSDL is the right choice.
+There are other answers such that XML and SOAP is overly complex and most developers are moving towards simpler technologies such as combinations of REST and JSON. But bandwidth alone is the major driver.
