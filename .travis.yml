@@ -1,0 +1,16 @@
+language: java
+jdk:
+  - oraclejdk8
+
+script: "[ ${TRAVIS_PULL_REQUEST} = 'false' ] && ./faq.sh site"
+
+# whitelist
+branches:
+  only:
+    - master
+
+env:
+  global:
+    - secure: "VHp+Nt8FVyBtXLc4yXwZK0pdnJMusWtoNl+xgdEiqxr2NpWlP2vtkS3Ql0SyNY1OKOf3ZJrQuFlMcGNuVek2N9tQSX1smKzXsmxM1tXdOHkr5bczxabG6PXPOT35vqTm409rhf3XdhSYzHS3HnlRMvO+CzkCFi1jsUTNT3RH1oI="
+    - secure: "iPuiakOcv8hLC7XLXCJrtcy8hXCjvmVHLt5THadzvDDjBOvMlGizpzDEhVraSt5SPEFj/DJfHVlqXTRe6b54w3O50s1RrFmSE2LNGB+2Gi5T/3rpx83eHgeeBxxeXq3vSBSC1GNJKp+17yf1Ky1rTKPlHzWlqGZ7am3MrKdiJeY="
+
