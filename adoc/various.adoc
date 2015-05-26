@@ -17,15 +17,15 @@ The Maritime Cloud is not a concrete product you can download. Just like you can
 === You mentioned iPhone and Android. Does this mean I will be able to download apps to my ECDIS.
 At some point it might be possible to download an app to your ECDIS. However, providing an ecosystem for ECDIS apps is not the current focus of the Maritime Cloud. Instead we are focusing on how heterogenous systems such as ship and shore based platforms, smartphones, tablets and personal computers can communicate easily and securely across various communication channels such as the Internet, satellites and radio.
 
-////
 === Does the Maritime Cloud provide services such as weather information
 No, the Maritime Cloud does not provide specific services such as weather information.
 Instead it provides tools that allows for easy development of such services. For example,
 the identity registry can be used to validate that a specific provider of weather information is actually who he says he is.
-The service registry can be used query about what kind of weather services are available in a given area. Or if someone wants to
-be a provider of weather information. The description of which standards to implement can be found in the service registry.
+The service registry can be used to query about what kind of weather services are available in a given area. Or if someone wants to
+be a provider of weather information. The description of which weather information standards to implement can be found in the service registry.
 Finally, the MMS service can be used to push updated weather reports to ships.
 
+////
 
 === Does the Maritime Cloud standardize services.
 The Maritime Cloud does not mandata any specific process for development of service specifications.
