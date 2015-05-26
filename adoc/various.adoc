@@ -80,8 +80,9 @@ For example, instead of every company developing their own parser for an AIS mes
 The Maritime Cloud client can take a MSDL file and automatically generate the parser for you.
 Avoiding the risk of developer mistakes and lowering the need for interoperability testing.
 
+////
 Long term, you will also be take to, for example, take a MSDL and generate the output you need in a S-100 specification.
-
+////
 === Why didn't you just use XML and SOAP instead of MSDL and MMS
 The short answer is bandwidth issues. Even compressed (zipped) XML still uses 3-4 times more bandwidth than an efficient binary encoding such as the one that we use. With Internet satellite prices of up to $30/MB and cost being a major barrier towards adoption. We believe a technology such as MSDL is the right choice.
 There are other answers such that XML and SOAP is overly complex and most developers are moving towards simpler technologies such as combinations of REST and JSON. But bandwidth alone is the major driver.
