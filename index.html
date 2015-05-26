@@ -522,8 +522,9 @@ MathJax.Hub.Config({
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#various-questions">Various Questions</a></li>
-<li><a href="#technical-questions">Technical Questions</a></li>
+<li><a href="#various">Various</a></li>
+<li><a href="#msdl">MSDL</a></li>
+<li><a href="#developers">Developers</a></li>
 </ul>
 </div>
 </div>
@@ -540,19 +541,28 @@ MathJax.Hub.Config({
 </div>
 </div>
 <div class="sect1">
-<h2 id="various-questions"><a class="anchor" href="#various-questions"></a>Various Questions</h2>
+<h2 id="various"><a class="anchor" href="#various"></a>Various</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>Various Questions about the Maritime Cloud</p>
+</div>
 <div class="sect2">
 <h3 id="who-is-behind-the-maritime-cloud"><a class="anchor" href="#who-is-behind-the-maritime-cloud"></a>Who is behind the Maritime Cloud</h3>
 <div class="paragraph">
 <p>The Maritime Cloud started as an internal project at the Danish Maritime Authorities in 2013.
-Now more than 30 national and international partners have joined the effort. Ranging from large intergovernmental organizations to small private companies.</p>
+Now more than 30 commercial, academic, authorities and international partners have joined the effort</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="where-can-i-download-the-maritime-cloud"><a class="anchor" href="#where-can-i-download-the-maritime-cloud"></a>Where can I download the Maritime Cloud</h3>
 <div class="paragraph">
 <p>The Maritime Cloud is not a concrete product you can download. Just like you cannot download the Internet. Instead it is a platform that organizations and private companies can use to build various kind of maritime services. Just like developers can build apps for the iPhone or Android ecosystem.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="you-mentioned-iphone-and-android-does-this-mean-i-will-be-able-to-download-apps-to-my-ecdis"><a class="anchor" href="#you-mentioned-iphone-and-android-does-this-mean-i-will-be-able-to-download-apps-to-my-ecdis"></a>You mentioned iPhone and Android. Does this mean I will be able to download apps to my ECDIS.</h3>
+<div class="paragraph">
+<p>At some point it might be possible to download an app to your ECDIS. However, providing an ecosystem for ECDIS apps is not the current focus of the Maritime Cloud. Instead we are focusing on how heterogenous systems such as ship and shore based platforms, smartphones, tablets and personal computers can communicate easily and securely across various communication channels such as the Internet, satellites and radio.</p>
 </div>
 </div>
 <div class="sect2">
@@ -564,51 +574,30 @@ Now more than 30 national and international partners have joined the effort. Ran
 <div class="sect2">
 <h3 id="when-do-you-expect-the-maritime-cloud-to-be-done"><a class="anchor" href="#when-do-you-expect-the-maritime-cloud-to-be-done"></a>When do you expect the Maritime Cloud to be done</h3>
 <div class="paragraph">
-<p>We do not expect the Maritime Cloud to ever be finished. Instead it is a
-product that gradually will improve over time with more and more features.
-Just like smartphones such as iPhone and Android gets frequent updates with more and more features. Currently we release new features roughly every 3-4 months. But in the future we hope to have a new release every year.</p>
+<p>We do not expect the Maritime Cloud to ever be finished. Instead it is an evolving framework that gradually will improve over time supporting more and more features. Just like smartphones such as iPhone and Android gets frequent updates with more and more features. Currently we release new features roughly every 3-4 months. But in the future when things have stabilized we plan on having a new release every year.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="is-the-maritime-cloud-secure"><a class="anchor" href="#is-the-maritime-cloud-secure"></a>Is the Maritime Cloud secure</h3>
 <div class="paragraph">
-<p>In the long term the Maritime Cloud will use many of the same security technologies as banks, e-commerce sites and governments uses. Messages sent from ships will be digitally signed. Communication channels will be encrypted. You will be able to use biometric authentications methods such as fingerprints to sign documents. And many other state of the art technologies. However, the current prototype does not support all these security features yet. But they will be gradually added over the coming releases.</p>
+<p>In the long term the Maritime Cloud will use many of the same security technologies used by banks, e-commerce sites and governments. Messages sent to and from ships can be digitally signed. Communication channels can be encrypted. You will even be able to use biometric authentications methods such as fingerprints to sign documents and many other state of the art technologies. However, the current prototype does not support all these security features - yet. But they will be gradually added over the coming releases.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="is-the-maritime-cloud-open-source"><a class="anchor" href="#is-the-maritime-cloud-open-source"></a>Is the Maritime Cloud Open Source</h3>
 <div class="paragraph">
-<p>Yes! Everything that is developed within the Maritime Cloud is open sourced under the business friendly Apache 2.0 License. There are no requirements for private companies that uses the Maritime Cloud to open source their services and applications in any way.</p>
+<p>Yes! Everything that is developed within the Maritime Cloud is open sourced under the business friendly Apache 2.0 License. There are no requirements for private companies that uses the Maritime Cloud to open source their services or applications in any way.</p>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="technical-questions"><a class="anchor" href="#technical-questions"></a>Technical Questions</h2>
+<h2 id="msdl"><a class="anchor" href="#msdl"></a>MSDL</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="how-do-i-get-started-with-developing-on-the-maritime-cloud"><a class="anchor" href="#how-do-i-get-started-with-developing-on-the-maritime-cloud"></a>How do I get started with developing on the Maritime Cloud</h3>
+<h3 id="what-is-msdl"><a class="anchor" href="#what-is-msdl"></a>What is MSDL</h3>
 <div class="paragraph">
-<p>The easiest way is to read out development guide available at <a href="http://dev.maritimecloud.net/" class="bare">http://dev.maritimecloud.net/</a>
-Why did you choose to develop the Maritime Cloud in Java
-The short answer is because it was the prefered language of the developers that made the initial prototypes. However, we still believe that Java is the right choice for a big distributed systems such as the Maritime Cloud. Both because of the vast amount of libraries to build on top of but also because of the popularity of the language.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="do-i-have-to-use-java-to-develop-on-the-maritime-cloud"><a class="anchor" href="#do-i-have-to-use-java-to-develop-on-the-maritime-cloud"></a>Do I have to use Java to develop on the Maritime Cloud.</h3>
-<div class="paragraph">
-<p>First, there are no Maritime Cloud specifications that will ever require a particular programming language or a particular operation system. Everything is specified in bits and bytes. And anyone can take these specifications and implement them in whatever language they want to.</p>
-</div>
-<div class="paragraph">
-<p>However, we have implemented the first client prototype in Java… EXPAND</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="what-is-the-identity-registry"><a class="anchor" href="#what-is-the-identity-registry"></a>What is the Identity Registry</h3>
-<div class="paragraph">
-<p>The identity registry is
-=== What is MSDL
-MSDL is a standardized way of describing the services that can be used on the Maritime Cloud.
+<p>MSDL is a standardized way of describing the services that can be used on the Maritime Cloud.
 For example, instead of every company developing their own parser for an AIS message.
 The Maritime Cloud client can take a MSDL file and automatically generate the parser for you.
 Avoiding the risk of developer mistakes and lowering the need for interoperability testing.</p>
@@ -620,8 +609,55 @@ Avoiding the risk of developer mistakes and lowering the need for interoperabili
 <div class="sect2">
 <h3 id="why-didn-t-you-just-use-xml-and-soap-instead-of-msdl-and-mms"><a class="anchor" href="#why-didn-t-you-just-use-xml-and-soap-instead-of-msdl-and-mms"></a>Why didn&#8217;t you just use XML and SOAP instead of MSDL and MMS</h3>
 <div class="paragraph">
+<p>The Maritime Industry has a rather unique problem shared with very few other industries in the world: Lack of bandwidth.</p>
+</div>
+<div class="paragraph">
 <p>The short answer is bandwidth issues. Even compressed (zipped) XML still uses 3-4 times more bandwidth than an efficient binary encoding such as the one that we use. With Internet satellite prices of up to $30/MB and cost being a major barrier towards adoption. We believe a technology such as MSDL is the right choice.
 There are other answers such that XML and SOAP is overly complex and most developers are moving towards simpler technologies such as combinations of REST and JSON. But bandwidth alone is the major driver.</p>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="developers"><a class="anchor" href="#developers"></a>Developers</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="how-do-i-get-started-with-developing-on-the-maritime-cloud"><a class="anchor" href="#how-do-i-get-started-with-developing-on-the-maritime-cloud"></a>How do I get started with developing on the Maritime Cloud</h3>
+<div class="paragraph">
+<p>The easiest way is to read out development guide available at <a href="http://dev.maritimecloud.net/" class="bare">http://dev.maritimecloud.net/</a></p>
+</div>
+<div class="paragraph">
+<p>If you have any development questions please use our Google Group available at <a href="https://groups.google.com/forum/#!forum/maritimecloud" class="bare">https://groups.google.com/forum/#!forum/maritimecloud</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="do-i-have-to-use-java-to-develop-on-the-maritime-cloud"><a class="anchor" href="#do-i-have-to-use-java-to-develop-on-the-maritime-cloud"></a>Do I have to use Java to develop on the Maritime Cloud.</h3>
+<div class="paragraph">
+<p>First, there are no Maritime Cloud specifications that will ever require a particular programming language or a particular operation system. Everything is specified in bits and bytes. And anyone can take these specifications and implement them in whatever language they want to.</p>
+</div>
+<div class="paragraph">
+<p>However, in order to benefit from using the Maritime Cloud. You need to use a generic client library that is implemented in a specific programming language.
+The library is responsible, for example, for communicating with the MMS server and for generating code that can parse and decrypt incoming binary messages.</p>
+</div>
+<div class="paragraph">
+<p>So far, we have implemented the first client prototype in Java. We are looking at ways to bringing the Maritime Cloud to the browser via JavaScript. And we do expect to develop a C++ client at some point. But no concrete plans have been made at the moment. This is an area where contributions would be greatly appreciated.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="why-did-you-choose-to-develop-the-maritime-cloud-in-java"><a class="anchor" href="#why-did-you-choose-to-develop-the-maritime-cloud-in-java"></a>Why did you choose to develop the Maritime Cloud in Java</h3>
+<div class="paragraph">
+<p>The short answer is because it was the preferred language of the developers that made the initial prototypes. However, we still believe that the Java platform is the right choice for a big distributed systems such as the Maritime Cloud. Both because of the vast amount of libraries to build on top of but also because of the popularity of the language.</p>
+</div>
+<div class="paragraph">
+<p>We expect that the server side components such as the Identity and Service Registry and the MMS server will continue being developed in Java.
+However, as previously mentioned we expect that client libraries for additional languages will be added at some point in the future.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="where-can-i-find-the-source-code-for-the-maritime-cloud"><a class="anchor" href="#where-can-i-find-the-source-code-for-the-maritime-cloud"></a>Where can I find the source code for the Maritime Cloud</h3>
+<div class="paragraph">
+<p>All our source code can be found on GitHub here <a href="https://www.github.com/MaritimeCloud/MaritimeCloud" class="bare">https://www.github.com/MaritimeCloud/MaritimeCloud</a></p>
 </div>
 </div>
 </div>
@@ -629,7 +665,7 @@ There are other answers such that XML and SOAP is overly complex and most develo
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2015-05-22 13:49:16 ICT
+Last updated 2015-05-26 10:39:27 CEST
 </div>
 </div>
 </body>
