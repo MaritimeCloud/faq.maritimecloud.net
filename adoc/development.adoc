@@ -1,0 +1,23 @@
+== Developers
+
+=== How do I get started with developing on the Maritime Cloud
+The easiest way is to read out development guide available at http://dev.maritimecloud.net/
+
+If you have any development questions please use our Google Group available at https://groups.google.com/forum/#!forum/maritimecloud
+
+=== Do I have to use Java to develop on the Maritime Cloud.
+First, there are no Maritime Cloud specifications that will ever require a particular programming language or a particular operation system. Everything is specified in bits and bytes. And anyone can take these specifications and implement them in whatever language they want to.
+
+However, in order to benefit from using the Maritime Cloud. You need to use a generic client library that is implemented in a specific programming language.
+The library is responsible, for example, for communicating with the MMS server and for generating code that can parse and decrypt incoming binary messages.
+
+So far, we have implemented the first client prototype in Java. We are looking at ways to bringing the Maritime Cloud to the browser via JavaScript. And we do expect to develop a C++ client at some point. But no concrete plans have been made at the moment. This is an area where contributions would be greatly appreciated.
+
+=== Why did you choose to develop the Maritime Cloud in Java
+The short answer is because it was the preferred language of the developers that made the initial prototypes. However, we still believe that the Java platform is the right choice for a big distributed systems such as the Maritime Cloud. Both because of the vast amount of libraries to build on top of but also because of the popularity of the language.
+
+We expect that the server side components such as the Identity and Service Registry and the MMS server will continue being developed in Java.
+However, as previously mentioned we expect that client libraries for additional languages will be added at some point in the future.
+
+=== Where can I find the source code for the Maritime Cloud
+All our source code can be found on GitHub here https://www.github.com/MaritimeCloud/MaritimeCloud

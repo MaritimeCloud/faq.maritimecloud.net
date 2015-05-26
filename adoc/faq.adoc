@@ -31,5 +31,8 @@
 
 <<<
 
-include::MSDL.adoc[]
+include::various.adoc[]
 
+<<<
+
+include::development.adoc[]

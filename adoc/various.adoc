@@ -1,0 +1,85 @@
+If you have questions that are not answered in this FAQ. You can try our Newcomers Q/A Forum available here: https://groups.google.com/a/maritimecloud.net/forum/#!forum/newcomers
+
+Readers may send feedback about errors, omissions, and ambiguities in this guide to kasperni@maritimecloud.net
+
+== Various
+Various Questions about the Maritime Cloud
+
+=== Who is behind the Maritime Cloud
+The Maritime Cloud started as an internal project at the Danish Maritime Authorities in 2013.
+Now more than 30 commercial, academic, authorities and international partners have joined the effort
+
+=== Where can I download the Maritime Cloud
+The Maritime Cloud is not a concrete product you can download. Just like you cannot download the Internet. Instead it is a platform that organizations and private companies can use to build various kind of maritime services. Just like developers can build apps for the iPhone or Android ecosystem.
+
+=== You mentioned iPhone and Android. Does this mean I will be able to download apps to my ECDIS.
+At some point it might be possible to download an app to your ECDIS. However, providing an ecosystem for ECDIS apps is not the current focus of the Maritime Cloud. Instead we are focusing on how heterogenous systems such as ship and shore based platforms, smartphones, tablets and personal computers can communicate easily and securely across various communication channels such as the Internet, satellites and radio.
+
+////
+=== Does the Maritime Cloud provide services such as weather information
+No, the Maritime Cloud does not provide specific services such as weather information.
+Instead it provides tools that allows for easy development of such services. For example,
+the identity registry can be used to validate that a specific provider of weather information is actually who he says he is.
+The service registry can be used query about what kind of weather services are available in a given area. Or if someone wants to
+be a provider of weather information. The description of which standards to implement can be found in the service registry.
+Finally, the MMS service can be used to push updated weather reports to ships.
+
+
+=== Does the Maritime Cloud standardize services.
+The Maritime Cloud does not mandata any specific process for development of service specifications.
+It "just" allows organizations to register the outcome (in form of service specifications) in the Service Registry.
+Providing a central place for service provides to find specifications they can implement.
+
+
+=== What are the goals of the Maritime Cloud
+The goals of the Maritime Cloud is to create a platform that allows heterogenous systems such as ship and shore based platforms, smartphones, tablets and personal computers to communicate easily and securely across various communication channels such as the Internet and radio.
+
+
+Simplicity..
+Developers can create XXX services in 1 hour.
+It should be just as easy to 
+A developer should be able to integrate with an existing service in a couple of hours.
+The technologies in the Maritime Cloud complement each other.
+Instead of being 
+
+=== What kind of technologies does the Maritime Cloud replace
+The Maritime Cloud does not replace any kind of existing technology.
+Instead it 
+////
+
+=== Can everyone join and participate in the development of the Maritime Cloud
+Yes, the Maritime Cloud community is open for everyone with an interest in maritime technology. Keep in mind that contributing code is not the only way to get involved. You can provide feedback on documentation and tutorials, test the releases, share your visions or just participate in the various forum discussions. 
+
+=== When do you expect the Maritime Cloud to be done
+We do not expect the Maritime Cloud to ever be finished. Instead it is an evolving framework that gradually will improve over time supporting more and more features. Just like smartphones such as iPhone and Android gets frequent updates with more and more features. Currently we release new features roughly every 3-4 months. But in the future when things have stabilized we plan on having a new release every year.
+
+=== Is the Maritime Cloud secure
+In the long term the Maritime Cloud will use many of the same security technologies used by banks, e-commerce sites and governments. Messages sent to and from ships can be digitally signed. Communication channels can be encrypted. You will even be able to use biometric authentications methods such as fingerprints to sign documents and many other state of the art technologies. However, the current prototype does not support all these security features - yet. But they will be gradually added over the coming releases.
+
+
+=== Is the Maritime Cloud Open Source
+Yes! Everything that is developed within the Maritime Cloud is open sourced under the business friendly Apache 2.0 License. There are no requirements for private companies that uses the Maritime Cloud to open source their services or applications in any way.
+
+
+
+////
+=== What is the Identity Registry
+The identity registry is
+////
+== MSDL
+
+=== What is MSDL
+MSDL is a standardized way of describing the services that can be used on the Maritime Cloud.
+For example, instead of every company developing their own parser for an AIS message. 
+The Maritime Cloud client can take a MSDL file and automatically generate the parser for you.
+Avoiding the risk of developer mistakes and lowering the need for interoperability testing.
+
+Long term, you will also be take to, for example, take a MSDL and generate the output you need in a S-100 specification.
+
+=== Why didn't you just use XML and SOAP instead of MSDL and MMS
+The Maritime Industry has a rather unique problem shared with very few other industries in the world: Lack of bandwidth.
+
+The short answer is bandwidth issues. Even compressed (zipped) XML still uses 3-4 times more bandwidth than an efficient binary encoding such as the one that we use. With Internet satellite prices of up to $30/MB and cost being a major barrier towards adoption. We believe a technology such as MSDL is the right choice.
+There are other answers such that XML and SOAP is overly complex and most developers are moving towards simpler technologies such as combinations of REST and JSON. But bandwidth alone is the major driver.
+
+
