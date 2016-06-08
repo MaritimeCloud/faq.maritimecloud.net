@@ -1,0 +1,24 @@
+
+Q) Would the foundation be strictly development organization?
+A)Probably some of these
+Standards. 
+Guidelines. For example, guidelines for developing services that make use of the Maritime Cloud
+Hosted Services. Hosted service such as the Identity Registry and Service Registry
+Reference implementations, for example, A reference implementation of a MMS client. 
+
+Q) What kind of projects is included
+Value added projects. For example, 
+We would never sell chart data. But could, for example, 
+
+
+
+Q) Is the goal to develop everything yourself
+Yes.
+For example, the service registry is basically a database.
+You can register and lookup service specifications and informations about deployed services.
+
+For example, the service registry is basically a CRUD.
+In many ways. 
+
+I think the answer is that we intend to provide high quality reference implementations.
+Just like the Tomcat

@@ -1,1 +1,157 @@
-=== MSDL
+such as Android and iPhone. 
+Which have
+
+=== Cloud Services
+A major part of the Maritime Cloud is a number of centrally hosted cloud based services.
+
+It also a place when this project is different.
+Is that it also drives a number of xxxx services. While most 
+
+The Maritime Cloud 
+Continue to grow a 
+
+
+We believe this is possible. For example, the Eclipse foundation had a core service availability on 99.975 % in 
+
+
+2013.
+
+http://www.cadjewelleryskills.com/
+
+
+=== Could there be multiple service registries
+Techinically anyone can set 
+
+Any private company can set up a service registry themself.
+But we question the wisunlike
+
+But from an economic perspective it probably does not make much sense.
+Although the maritime sector is a key player in the global economy.
+We question whether it is big enough to 
+
+
+
+
+==== Is my data safe with XXX
+First of all,
+most of data is public data.
+For example, the specification of service.
+The public key of various ships.
+
+You can choose to encrypt it. For example MMS
+
+
+
+highly scalable, 
+
+available over the Internet.
+
+There is nothing wrong with XML or SOAP.
+However these technologies are not ideal when bandwidth is limiting factor.
+
+
+
+==== I kind of services
+There are no fixed definition ..
+Anyone can propose a new cloud based to be put into the portfolio of existing services.
+However,
+  Unique: The service must provide functionality that cannot be found elsewhere. For example, there are numerous private companies that
+
+ That ca
+
+  Common good, 
+  Open Standards: The service must be built on open.
+  
+  Open Sourced Reference Implementation: A. So that individual and private companies can
+  create their own private cloud for testing o.
+
+  High Degree of Automization.
+  Scales easily. For example, the Service Registry is just a database
+
+
+
+
+want to err on the conservative side. Because once a new service is added it is practically impossible to remove again once people have started using it.
+
+
+
+==== Service Registry
+
+
+
+
+
+  And have an Open Sourced Refrence implementation
+
+
+   Sourced: Open Standars
+
+  
+
+
+
+
+
+
+
+=== Service Registry
+The service registry 
+
+A UDDI registry's functional purpose is the representation of data and metadata about public maritime services. A registry, either for use on a public network or within an organization's internal infrastructure, offers a standards-based mechanism to classify, catalog, and manage maritime services, so that they can be discovered and consumed by users or other applications.
+
+
+==== Can I get a visual overview
+
+=== 
+The Maritime Cloud is an open Ecosystem.
+This means that we as a default allows things. Vs restricts things.
+For example.
+
+
+
+
+
+==== What is a Service Specification
+It usually consists of 
+some free text,
+some machine readable data modelling.
+
+In case a service requires interaction with an ECDIS the specification might also
+contain details about portrayal.
+
+
+
+==== A Service Specification
+
+
+==== Who decides.
+Just like anyone can put up a website on the Internet. Anyone can register a service specification or a service instance.
+
+However, each service specification or service instance is owned by a single organization. So whether or not they they should 
+
+Just like consumers must make a decision about whether or not to trust a website when they shop online.
+ 
+This does not mean.
+The Identity Registry contains
+
+However, 
+
+A company might choose to only use standards that signed of by international recognized authority such as IMO, IALA, ...
+
+
+ Internet Domain name on the 
+
+
+==== Do I need to use S-100 for the service specification
+There are no requirements to use S-100 when registering a service specification.
+For many simple services 
+For example, if you a private company that once to provide 
+
+
+==== What is the Maritime Messaging Service (MMS)
+
+
+
+In fact the Maritime Cloud.
+
+That all kind of usable standards can be built on top.

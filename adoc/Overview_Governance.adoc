@@ -1,0 +1,28 @@
+== Governance
+One of the goals is the Maritime Cloud is to create a structure that allows it too be relevant for many years.
+
+=== How will the Maritime Cloud be governed in the future
+We hope to set up some kind of non-profit vendor-neutral foundation to control it. 
+Either as a completely separate entity or under an international organization such as IALA. 
+
+Membership would be open for anyone with an interest in driving the platform forward. 
+An example of how this could be done is the open source community Eclipse: https://eclipse.org/membership/become_a_member/membershipTypes.php 
+
+=== What would be the function of such a foundation
+The foundation
+Development, coordinate development
+Legal
+Hosting
+Community
+
+=== How would such a foundation be financed
+Uncertain at the moment but we aim for a diversified revenue model. Reliance on a single source of revenue to fund a foundation will put it at greater risk of being negatively impacted by industry specific business cycles. So probably a combination of
+
+* *Membership payments* to the foundation by private corporations. In return they are allowed to pick out the strategic path for the Maritime Cloud. And if they commit full technical staff they also (in our opinion) gets a strategic advantage by having people with very intimate knowledge of the platform.
+
+* *Research grants*, for example, goverment sponsored projects that needs new functionality or wants to integrate with the Maritime Cloud.
+
+* *Utility payment.* We might charge for some of our cloud based services. For example, companies that want to have more than 5 of their ships connected to the Maritime Cloud must pay a small fee. Or companies that send more than 1 million messages through the Maritime Messaging Service must pay a negligible amount for every extra million messages they sent.
+
+* *Open Source.* Being an open source project we also hope to attract people who wants to put development effort into the project because they think it is fun or they need a specific feature.
+

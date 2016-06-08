@@ -5,3 +5,5 @@
 ==== Can I send XML over MMS
 There is no specific support for XML.
 But you can easily just send it an ASCII or UTF-8 string.
+
+

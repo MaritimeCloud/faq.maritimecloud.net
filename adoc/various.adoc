@@ -1,23 +1,35 @@
-Welcome to Maritime Cloud FAQ. The FAQ is just getting started (May 2015) so please bear with us while we add content to it.
+The new structure will include a technical steering committee to direct technical decisions, oversee working group projects and manage contributions, as well as a board of directors that will guide business decisions.
 
-If you have questions that are not answered in this FAQ. You can try our Newcomers Q/A Forum available here: https://groups.google.com/a/maritimecloud.net/forum/#!forum/newcomers
+The technical steering committee will be made up of both Node.js and io.js technical communities. In addition, there will be an individual membership class will have representation on the board.
 
-Readers may send feedback about errors, omissions, and ambiguities in this guide to kasperni@maritimecloud.net
+“The Node.js Foundation provides a neutral structure to balance the needs of all constituents in the community: the users, vendors and contributors,” said Jim Zemlin, executive director of the Linux Foundation. “As projects grow to the size of Node.js, they benefit from the neutrality, open governance and community that only a foundation can provide.”
+
+
+
+Read more: http://sdtimes.com/node-js-foundations-open-governance-structure-and-bing-to-use-https-by-default-sd-times-news-digest-june-16-2015/#ixzz3dQG20glE 
+Follow us: @sdtimes on Twitter | sdtimes on Facebook
+
+
+== Doo
+
+[discrete] 
+== Discrete Title for a Sidebar 
+
+partintro
+
+
+**** 
+Discrete titles are useful for labeling large sidebar and admonition blocks.
+****
+sdsd
 
 == Various
 Various Questions about the Maritime Cloud
 
-=== Who is behind the Maritime Cloud
-The Maritime Cloud started as an internal project at the Danish Maritime Authorities in 2013.
-Now more than 30 commercial, academic, authorities and international partners have joined the effort
+[discrete] 
+=== Various 
 
-=== Where can I download the Maritime Cloud
-The Maritime Cloud is not a concrete product you can download. Just like you cannot download the Internet. Instead it is a platform that organizations and private companies can use to build various kind of maritime services. Just like developers can build apps for the iPhone or Android ecosystem.
-
-=== You mentioned iPhone and Android. Does this mean I will be able to download apps to my ECDIS.
-At some point it might be possible to download an app to your ECDIS. However, providing an ecosystem for ECDIS apps is not the current focus of the Maritime Cloud. Instead we are focusing on how heterogenous systems such as ship and shore based platforms, smartphones, tablets and personal computers can communicate easily and securely across various communication channels such as the Internet, satellites and radio.
-
-=== Does the Maritime Cloud provide services such as weather information
+==== Does the Maritime Cloud provide services such as weather information
 No, the Maritime Cloud does not provide specific services such as weather information.
 Instead it provides tools that allows for easy development of such services. For example,
 the identity registry can be used to validate that a specific provider of weather information is actually who he says he is.
@@ -27,15 +39,21 @@ Finally, the MMS service can be used to push updated weather reports to ships.
 
 ////
 
-=== Does the Maritime Cloud standardize services.
+==== Does the Maritime Cloud standardize services.
 The Maritime Cloud does not mandata any specific process for development of service specifications.
 It "just" allows organizations to register the outcome (in form of service specifications) in the Service Registry.
 Providing a central place for service provides to find specifications they can implement.
 
 
-=== What are the goals of the Maritime Cloud
-The goals of the Maritime Cloud is to create a platform that allows heterogenous systems such as ship and shore based platforms, smartphones, tablets and personal computers to communicate easily and securely across various communication channels such as the Internet and radio.
+////
 
+
+==== Is the Maritime Cloud secure
+In the long term the Maritime Cloud will use many of the same security technologies used by banks, e-commerce sites and governments. Messages sent to and from ships can be digitally signed. Communication channels can be encrypted. You will even be able to use biometric authentications methods such as fingerprints to sign documents and many other state of the art technologies. However, the current prototype does not support all these security features - yet. But they will be gradually added over the coming releases.
+
+
+=== What are
+The goals of the Maritime Cloud is to create 
 
 Simplicity..
 Developers can create XXX services in 1 hour.
@@ -44,28 +62,10 @@ A developer should be able to integrate with an existing service in a couple of 
 The technologies in the Maritime Cloud complement each other.
 Instead of being 
 
-=== What kind of technologies does the Maritime Cloud replace
-The Maritime Cloud does not replace any kind of existing technology.
-Instead it 
-////
-
-=== Can everyone join and participate in the development of the Maritime Cloud
-Yes, the Maritime Cloud community is open for everyone with an interest in maritime technology. Keep in mind that contributing code is not the only way to get involved. You can provide feedback on documentation and tutorials, test the releases, share your visions or just participate in the various forum discussions. 
-
-=== When do you expect the Maritime Cloud to be done
-We do not expect the Maritime Cloud to ever be finished. Instead it is an evolving framework that gradually will improve over time supporting more and more features. Just like smartphones such as iPhone and Android gets frequent updates with more and more features. Currently we release new features roughly every 3-4 months. But in the future when things have stabilized we plan on having a new release every year.
-
-=== Is the Maritime Cloud secure
-In the long term the Maritime Cloud will use many of the same security technologies used by banks, e-commerce sites and governments. Messages sent to and from ships can be digitally signed. Communication channels can be encrypted. You will even be able to use biometric authentications methods such as fingerprints to sign documents and many other state of the art technologies. However, the current prototype does not support all these security features - yet. But they will be gradually added over the coming releases.
-
-
-=== Is the Maritime Cloud Open Source
-Yes! Everything that is developed within the Maritime Cloud is open sourced under the business friendly Apache 2.0 License. There are no requirements for private companies that uses the Maritime Cloud to open source their services or applications in any way.
-
 
 
 ////
-=== What is the Identity Registry
+==== What is the Identity Registry
 The identity registry is
 
 The Maritime Industry has a rather unique problem shared with very few other industries in the world: Lack of bandwidth.

@@ -1,38 +1,43 @@
-=== MSDL
-
-==== What is MSDL
+== MSDL
 MSDL (Maritime Service Description Language) is a simple and standardized way of describing electronic services and the messages that are transmitted between maritime actors over the Internet or via radio based technology. More precisely MSDL is an interface description language footnote:[http://en.wikipedia.org/wiki/Interface_description_language] or specification language used for describing the interface of a particular set of services. MSDL is to the Maritime Cloud what IDL is to Corba and what WSDL and XML Schema is to XML based web services. 
 
-==== What is the goal of MSDL
-The primary goal of MSDL is to enable efﬁcient and reliable communication across programming languages and communication carriers by abstracting the portions of each 
-programming language that tend to require the most customization into a common library that is implemented in each programming language. Speciﬁcally, it allows developers to deﬁne datatypes and service interfaces in a single programming language-neutral text ﬁle and generate all the necessary code for parsing and serializing massages.
+=== What is the goal of MSDL
+The primary goal of MSDL is to enable efﬁcient and reliable communication across programming languages and communication carriers by abstracting the portions of each programming language that tend to require the most customization into a common library that is implemented in each programming language. More speciﬁcally, it allows developers to deﬁne datatypes and service interfaces in a single programming language-neutral text ﬁle and generate all the necessary code for parsing and serializing massages automatically.
 
-==== How is MSDL related to AIS
-One of the main problems with AIS is that every organization has to implement parsing in their own.
+=== What does a MSDL file look like
+We have a couple of examples in the development guide
+http://dev.maritimecloud.net/devguide/index.html#msdl
+
+=== How is MSDL related to AIS
+One of the many problems with AIS is that every organization has to take manually implement (or buy) a parser for each AIS message.
+
+our security goal is for _all users_ to be safe using _any_ of our _products_ from _any country_ on _any platform_
+
+Scaling
+
+ a  implement parsing in their own.
 The main reason is that is takes consirable time to implement these application
 specific messages. An organization needs to implement a parser. It also needs to
 be tested with real data. Which is often non-. Finally, you often need to do integration.
 
 There are many other problems with AIS which have influenced the development of MSDL. Many of which are detailed in toils of AIS.
+[http://vislab-ccom.unh.edu/~schwehr/papers/toils.txt]
 
+=== Can MSDL only be used over the Internet
+No! Unlike, for example, AIS MSDL is not bound to a physical carrier so messages can be transmitted via any carrier be that Internet or radio. Messages are serialized as byte streams and be transported over any carrier such as application specific messages in AIS, NAVDAT or Maritime Messageing Service (MMS).
 
-==== Can MSDL only be used over the Internet
-No. Unlike, for example, AIS MSDL is not bound to a physical carrier so messages can be transmitted via any carrier be that Internet or radio. Messages are serialized as byte streams and be transported over any carrier such as application specific messages in AIS, NAVTEX or Maritime Messageing Service (MMS).
-
-
-==== Why not just use XML and SOAP instead of MSDL and MMS
-The reason is primarily bandwidth. Either because it is expensive (Internet) or because there is little of it (radio). Even compressed (zipped) XML still uses 3-4 times more bandwidth than an efficient binary encoding such as the one that is implemented in the Maritime Cloud library. With Internet satellite prices of up to $30/MB and cost being a major barrier towards adoption of e-Navigation. We believe a technology such as MSDL is the right choice for developing services targeted ships. For all of the additional bandwidth is used to 
-
+=== Why not just use XML and SOAP instead of MSDL and MMS
+The reason is primarily bandwidth. Either because it is expensive (Internet) or because there is little available (radio). Even compressed (zipped) XML still uses 3-4 times more bandwidth than an efficient binary encoding such as the one that is implemented in standard Maritime Cloud libraries. With Internet satellite prices of up to $30/MB and cost being a major barrier towards adoption of e-Navigation. We believe a bandwidth saving technology such as MSDL is the right choice for developing services targeted ships. 
 
 This does not imply that existing services based on XML and SOAP need to be abandoned. However, we believe MSDL is both a simpler and more cost effective alternative.
 
-==== How does MSDL relate to S-100
+=== How does MSDL relate to S-100
 S-100 is a standard from International Hydrographic Organization (IHO).
-MSDL has no dependencies to S-100. However, in the future S-100 specifications might contain MSDL files
+MSDL has no dependencies to S-100. However, S-100 specifications might contain MSDL files.
 
-Long term, it might even be possible to take MSDL files and generate the output you need for a S-100 specification.
+Long term, it might even be possible to take MSDL files and automatically generate much of the output needed for a S-100 specification.
 
-==== What are some of features of MSDL
+=== What are some of features of MSDL
 * Carrier Neutral Serialization: Messages are serialized as byte streams and be transported over any carrier such as application specific messages in AIS, NAVTEX or Maritime Messageing Service (MMS).
 * Language Neutral: Services defined in MSDL files can be used from any programming language. As long as the basic Maritime Cloud library is available on the platform
 * Future-Proof: Messages can easily be extended in the future with new fields. Allowing easily evolvement of services. 
@@ -48,16 +53,15 @@ For example, instead of company writing their own parser
 
 
 
-====
 
-==== How do I retire a particular service
+=== How do I retire a particular service
 There are no support for dispanding messages.
 Because there
 
 However, you can deprecate a service.
 Which means that people
 
-==== What are some features is the relationship to AIS
+=== What are some features is the relationship to AIS
 Forward extensible.
 Unit
 
@@ -74,13 +78,34 @@ For example, in the extensesions available there are at least 6 ways people have
 
 
 
+=== What is a MSDL namespace
+Every MSDL file must contain a namespace that defines 
 
-==== How does the Maritime Cloud keep track of MSDL files
+More specifically, when an organization registers itself on the Maritime Cloud is registers itself with an organization name. For example, 'IHO', 'IALA', 'Maerks', 'VTS_Oeresund'. When an organization uploads
 
-Every organization has their own name space.
+
+=== How do I findHow are does the Service re MSDL file Maritime Cloud keep track of MSDL files
+The Maritime Cloud uses the service registry to store MSDL files. And make them public available on a global scale.
+
+ When an organization attempts to upload 
+
+Everything that comes after IMO is managed by organization itself.
+
+
+
+Any organization can register MSDL files under their own organization name.
+
+  has their own name space.
 Based on the name registered in 
 
-==== How are versioning handled
+=== How 
+That the syntax of the MSDL file is in order according to the standard
+Also the service registry checks that a new version of a File is compatible with an old version.
+the MSDL file is well formed. If it is an update to an existing MSDL it will only be accepted if it is backward compatible.
+
+
+
+=== How are versioning handled
 Messages and services defined MSDL is robust in the face of versioning and data definition changes. This is critical, for example, to enable staged rollouts of changes to deployed services. The system must be able to support reading of old data from log files, as well as requests from out-of-date clients to new servers, and vice versa.
 
 
@@ -93,11 +118,8 @@ in order for services that t
 On the other messages described in MSDL can be sent out over any carrier. Be it radio based or internet based.
 
 
-==== Who How are 
+=== Who How are 
 Noone 
 
 Organizations must have their own
 
-All we make sure is that. 
-For example,
-the MSDL file is well formed. If it is an update to an existing MSDL it will only be accepted if it is backward compatible.

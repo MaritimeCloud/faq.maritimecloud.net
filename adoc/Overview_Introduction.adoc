@@ -1,0 +1,74 @@
+== Introduction
+The following questions 
+
+=== What is the Maritime Cloud
+The mission of the Maritime Cloud is to create an open vendor-neutral software platform for the maritime sector that allows heterogenous systems such as ship and shore based platforms, smartphones, tablets and personal computers to communicate easily and securely across various communication channels such as the Internet, satellite and radio.
+
+The Maritime Cloud is not a product for end users such as mariners or ship owners. However, it is a powerful enable for developing innovative maritime services for end users. Much like the Internet is the enabler for communication technologies such as email, WWW, blogs, social networking, and online shopping sites.
+
+Whereever possible the Maritime Cloud makes use of existing Internet based standards or maritime specific standards such as AIS or VDES.
+
+=== What are the goals of the Maritime Cloud
+The goals of the Maritime Cloud is to enable development of maritime services that are:
+
+* *Secure.* By deliving using 
+* *Enable,*
+* *Efficient,*saving bandwidth
+
+
+
+=== What kind of components does the Maritime Cloud consist of
+The Maritime Cloud is currently envisioned to consists of the following items:
+
+* *Cloud based services.* A number of cloud based services: The Identity Registry, the Service Registry and the Maritime Messing Service.
+* *MSDL.* The Maritime Service Definition Language which is a domain specific language for specifying maritime services.
+* *Client libraries.* A client library available in multiple programming languages that makes working with easily easily taking advantage of xxx
+* *Standards,* A number of standards developed. Either within the project itself or through an international organization such as IALA, IMO, IETF or ITU
+* *Guidelines,* A number of guidelines for building secure, safe, efficient and scalable maritime services that takes advantage of the Maritime Cloud.
+
+We expect the list to grow over time as we identity additional items that are generally usable for developing maritime services.
+
+=== Who is behind the Maritime Cloud
+The Maritime Cloud started as an internal project funded by the European Union at the Danish Maritime Authorities in 2013.
+Now more than 30 commercial, academic, national authorities and international organizations throughout the world have joined the effort.
+
+=== What is the current state of the project
+The project is currently 
+We are aiming to solve a major problem.
+
+
+=== When do you expect the Maritime Cloud to be done
+We do not expect the project to ever be finished. Instead the Maritime Cloud is an evolving framework that will gradually improve over time supporting more and more features based on user needs. Just like smartphones such as iPhone and Android gets frequent updates with more and more features over time.
+
+Currently we release new features roughly every 3-4 months. But in the future when things have stabilized we plan on having yearly backward compatible releases. Allowing people to upgrade their software in their own tempo.
+
+=== Why was the Maritime Cloud project started
+As part of the e-Navigation process the Danish Maritime Authority (DMA) had been working on an e-Navigation Prototype Display system called the EPD. The EPD consist of an ECDIS like ship side application and a shore side application for demonstrating potential e-navigation solutions. 
+
+During the development it was clear that AIS was a severe limiting factor when communicating between the ship side and the shore side. Putting a lot of limitations of the different kind of maritime services that could be developed. Among the many issues identified was: 
+
+* *Lack of bandwidth.* Only limited amounts of data could be transfered. Often using complex encoding schemes such as application specific AIS messages. 
+* *Ease of development.* There was no easy way to simulate AIS communication without a very complex developer environment.
+* *Limited Signal Coverage.* There are certain types of services where the actors communicating might not all be within reach of radio signals. 
+* *Lack of Security.* There are no built in forms of security in the AIS. Anyone can impersonate anyone. And anyone can listen in on every message.
+
+On the basis of these issues, DMA developed a number of concepts and built a number of prototypes to alleviate these problems.
+Since these are all general problems shared by most developers of maritime services. The initiative was taken to create a project (Maritime Cloud) that made these tools and technologies available to the global maritime community.
+
+=== Can everyone join and participate in the development of the Maritime Cloud
+Yes, the Maritime Cloud community is open for everyone with an interest in maritime technology. Keep in mind that contributing code is not the only way to get involved. You can provide feedback on documentation and tutorials, test the releases, share your visions or just participate in the various forum discussions. 
+
+=== Is the Maritime Cloud Open Source
+Yes! Everything that is developed within the Maritime Cloud is open sourced under the business friendly Apache 2.0 License. There are no requirements for private companies that uses the Maritime Cloud to open source their services or applications in any way.
+
+=== Where can I download the Maritime Cloud
+The Maritime Cloud is not a concrete product you can download. Just like you cannot download the Internet. Instead it is a platform that organizations and private companies can use to build various kind of maritime services. Just like developers can build apps for the iPhone or Android ecosystem.
+
+=== You mentioned iPhone and Android. Does this mean I will be able to download apps to my ECDIS.
+At some point it might be possible to download an app to your ECDIS. However, providing an ecosystem for ECDIS apps is not the current focus of the Maritime Cloud. Instead we are focusing on how heterogenous systems such as ship and shore based platforms, smartphones, tablets and personal computers can communicate easily and securely across various communication channels such as the Internet, satellite and radio.
+
+=== What kind of technologies does the Maritime Cloud replace
+The Maritime Cloud does not replace any kind of existing technology.
+Instead it delivers some non-existent technologies to ease the development of maritime service
+while at the same time working with existing and upcoming technologies such as AIS and VDES.
+

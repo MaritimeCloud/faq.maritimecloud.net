@@ -1,6 +1,6 @@
 
 = Maritime Cloud FAQ
-:doctype: article
+:doctype: book
 :compat-mode:
 :page-layout!:
 :toc: right
@@ -29,10 +29,38 @@
 :underscore: _
 :icons: font
 
+Welcome to Maritime Cloud FAQ. The FAQ is just getting started (May 2015) so please bear with us while we add content to it.
+
+If you have questions that are not answered in this FAQ. You can try our Newcomers Q/A Forum available here: https://groups.google.com/a/maritimecloud.net/forum/#!forum/newcomers
+
+Readers may send feedback about errors, omissions, and ambiguities in this guide to kasperni@maritimecloud.net
+
+= Overview
+<<<
+include::Overview_Introduction.adoc[]
+<<<
+<<<
+include::Overview_Governance.adoc[]
 <<<
 
-include::various.adoc[]
 
+= Technology
+<<<
+include::Technology_MSDL.adoc[]
 <<<
 
-include::development.adoc[]
+== Client Library
+=== Almanac
+
+== Cloud Based Services
+== Identity Registry
+== Service Registry
+== Maritime Messaging Service
+
+
+////
+Based on Internet standards
+Allows for an infinite number of resources
+Self explanatory.
+Decentralized
+////
